@@ -8,13 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="apple-touch-icon" href="img/icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
-
-  <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
@@ -23,32 +21,49 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <div class="header">
-    <img class="header-logo" src="img/logo.png" />
-    <a href="//codefordayton.org">Code For Dayton</a>
-  </div>
-  <div class="content">
-    <h1 class="title">DIY Face Masks</h1>
-    <h2>Description of the Need</h2>
+  <div class="container">
+    <div class="navbar navbar-light">
+      <a class="navbar-brand" href="#">
+        <img width="30" src="img/icon.png"/>
+        DIY Face Masks
+      </a>
+    </div>
+    <h1>Description of the Need</h1>
     <p>We’ve all seen the lines and panic buying in response to the COVID-19 Pandemic. Toilet paper shortages may be making the headlines, but personal protective equipment (PPE), like medical face masks, are in extremely short supply and are vitally needed.</p>
     <p>Cloth protective masks can be inexpensive and easy to make, even for folks with only basic sewing skills. This page provides links to some instructions and more importantly, attempts to provide a few mechanisms for donating what you’ve made to folks who don’t have the option of quarantining themselves.</p>
     <p>We are all managing our COVID-19 response in our own ways. We urge you to find some way to help your community.</p>
 
-    <h2>Resources</h2>
-    <ul>
-      <li><a href="https://github.com/ejboettcher/DIY_MedicalLike_Facemask">Evelyn's Instructions</a></li>
-      <li><a href="https://www.youtube.com/watch?v=VgHrnS6n4iA">How to make a Face Mask by Joann Fabrics</a></li>
-    </ul>
-    <h2>Exchange</h2>
-    <ul>
-      <li><a href="https://forms.gle/rqaBRCDcXFZhKhhC9">Form for Requesting Masks</a></li>
-      <li><a href="https://forms.gle/1Gn2AZbJMXPi1emP9">Form for Donating Masks</a></li>
-      <li><a href="https://www.facebook.com/groups/2330748697222928/?ref=share&refid=18">Masks of Love Facebook Group</a></li>
-    </ul>
+    <div class="card">
+      <div class="card-header">
+        Resources
+      </div>
+      <div class="card-body">
+        <p class="card-text">Need some guidance on making your masks?</p>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><a href="https://github.com/ejboettcher/DIY_MedicalLike_Facemask">Evelyn's Instructions</a></li>
+          <li class="list-group-item"><a href="https://www.youtube.com/watch?v=VgHrnS6n4iA">How to make a Face Mask by Joann Fabrics</a></li>
+        </ul>
+      </div>
+    </div>
+    <br>
+    <div class="card">
+      <div class="card-header">
+        Exchange
+      </div>
+      <div class="card-body">
+        <p class="card-text">A few options for donating or requesting masks.</p>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><a href="https://forms.gle/rqaBRCDcXFZhKhhC9">Form for Requesting Masks</a></li>
+          <li class="list-group-item"><a href="https://forms.gle/1Gn2AZbJMXPi1emP9">Form for Donating Masks</a></li>
+          <li class="list-group-item"><a href="https://www.facebook.com/groups/2330748697222928/?ref=share&refid=18">Masks of Love Facebook Group</a></li>
+        </ul>
+      </div>
+    </div>
+    <footer class="page-footer">
+      <p>Have something to add? <a href="mailto:team@codefordayton.org">Let us know</a> or submit a pull request <a href="https://github.com/codefordayton/diyfacemask">here</a>.</p>
+      <p>Made with pride by <a href="//codefordayton.org">Code For Dayton.</a></p>
+    </footer>
   </div>
-  <footer>
-    <p>Made with Love by Code For Dayton</p>
-  </footer>
   <script src="js/vendor/modernizr-3.8.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
@@ -58,7 +73,7 @@
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+    ga('create', 'UA-49480678-1', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>

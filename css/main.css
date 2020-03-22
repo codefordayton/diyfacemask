@@ -181,6 +181,12 @@ textarea {
   clear: both;
 }
 
+footer.page-footer {
+  text-align: center;
+  font-size: small;
+  padding-top:3em;
+}
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -261,9 +267,4 @@ textarea {
   h3 {
     page-break-after: avoid;
   }
-}
-
-.header {
-  background-color: #000;
-  color: #b3d4fc;
 }
